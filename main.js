@@ -1,8 +1,44 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+const triple = (num) =>{
+  return num*3
+}
 
+const tripleAll = (num) => {
+  return num.map(triple)
+}
+const getNegativeValue =(x) => {
+  return x <= 0 ? x : x * -1
+}
+const negativeValues =(x)=>{
+  return x.map(getNegativeValue)
+}
 
+const makeQuestion = (s) => {
+  return s+'?'
+}
+const questionings = (s)=>{
+  return s.map(makeQuestion)
+}
+const getInitials = (s)=>{
+  return s.split(' ')[0][0]+s.split(' ')[1][0]
+}
+const changeToInitials = (s)=>{
+  return s.map(getInitials)
+}
+const doubleIfEven = (x)=>{
+  return x%2 === 0 ? x*2:x
+}
+const doubleEven = (x)=>{
+  return x.map(doubleIfEven)
+}
+const titleCaseNames = (s)=>{
+  return s.map(z => z.slice(0,1).toUpperCase() + z.slice(1).toLowerCase())
+}
+const doubleEveryOther = (s)=>{
+  return s.map(x => s.indexOf(x)%2 === 0 ? x : x *2)
+}
 
 
 /********************************
